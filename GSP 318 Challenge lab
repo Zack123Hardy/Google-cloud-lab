@@ -3,6 +3,7 @@ Deploy to Kubernetes in Google Cloud: Challenge Lab
 
 Task 1: Create a Docker image and store the Dockerfile 
 
+gcloud auth list
 gsutil cat gs://cloud-training/gsp318/marking/setup_marking.sh | bash
 gcloud source repos clone valkyrie-app
 cd valkyrie-app
@@ -16,6 +17,7 @@ EOF
 docker build -t valkyrie-app:v0.0.1 .
 cd ..
 cd marking
+./step1.sh
 
 
 Task 2: Test the created Docker image 
@@ -24,7 +26,7 @@ cd valkyrie-app
 docker run -p 8080:8080 valkyrie-app:v0.0.1 &
 cd ..
 cd marking
-
+./step2.sh
 
 Task 3:Push the Docker image in the Container Repository 
 cd ..
