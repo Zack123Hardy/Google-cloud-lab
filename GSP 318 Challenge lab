@@ -16,7 +16,6 @@ EOF
 docker build -t valkyrie-app:v0.0.1 .
 cd ..
 cd marking
-./step1.sh
 
 
 Task 2: Test the created Docker image 
