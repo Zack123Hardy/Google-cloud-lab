@@ -76,6 +76,19 @@ gcloud source repos list
 
 sed -i "s/green/orange/g" source/html.go
 
+##Instruction(Do not copy)
+Go through the following:
+
+-> Manage Jenkins -> Manage Credentials -> Global -> add credentials -> Kind: Google Service Account from metadata -> OK
+
+-> Jenkins -> New Item -> Name : valkyrie-app -> Pipeline -> OK
+
+-> Pipeline -> Script: Pipeline script from SCM -> SCM: Git
+
+-> Repository URL: {Url from previous command} -> Credentials: {Project id}
+
+-> Apply -> Save
+
 
 # Update project in Jenkinsfile
 
