@@ -47,6 +47,7 @@ kubectl edit deployment valkyrie-dev
 
 ##Instruction(Do not copy)
 **Edit  "replicas from 1 to 3"
+Press "i" to get into insert mode and change "replicas" from 1 to 3. Press "Esc" -> ":wq" -> Enter to exit
 
 
 Task 5(a):Update the deployment with a new version of valkyrie-app
@@ -60,7 +61,7 @@ docker ps
 Task 5(b):Update the deployment with a new version of valkyrie-app
 ##Instruction(Do not copy)
 **Now Update v0.0.1 to v0.0.2
-
+Press 'i' to edit and change image to "image: gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.2". Press "Esc" -> ":wq" -> Enter
 
 
 
