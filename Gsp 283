@@ -1,0 +1,28 @@
+All steps need to be edit except 2rd code
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#NEED EDIT                                       |HERE|
+
+DAGS_BUCKET=<Replace_us-central1-composer-advanc-xxxxxxx-bucket>  
+
+#NO NEED TO EDIT
+
+gcloud composer environments run composer-advanced-lab \
+--location us-central1 variables -- \
+--set table_list_file_path /home/airflow/gcs/dags/bq_copy_eu_to_us_sample.csv
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#NEED EDIT
+
+gcloud composer environments run composer-advanced-lab \
+--location us-central1 variables -- \
+--set gcs_source_bucket <REPLACE_PROJECT_ID_WITH_US>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#NEED EDIT
+
+gcloud composer environments run composer-advanced-lab \
+--location us-central1 variables -- \
+--set gcs_dest_bucket <REPLACE_PROJECT_ID_WITH_EU>
+
+
